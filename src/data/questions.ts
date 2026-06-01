@@ -1,0 +1,452 @@
+import type { Question } from './types';
+
+export const questions: Question[] = [
+  // ========== 职业兴趣 (15题) ==========
+  {
+    id: 'interest_01',
+    dimension: 'interest',
+    text: '你更喜欢哪种工作方式？',
+    options: [
+      { label: 'A', text: '动手操作、装配调试' },
+      { label: 'B', text: '理论分析、数学建模' },
+      { label: 'C', text: '项目管理、协调推进' },
+      { label: 'D', text: '创新研发、从零到一' },
+    ],
+  },
+  {
+    id: 'interest_02',
+    dimension: 'interest',
+    text: '你对哪种工作场景最感兴趣？',
+    options: [
+      { label: 'A', text: '实验室研发环境' },
+      { label: 'B', text: '工厂车间或现场' },
+      { label: 'C', text: '办公室设计/分析' },
+      { label: 'D', text: '客户现场调试与交付' },
+    ],
+  },
+  {
+    id: 'interest_03',
+    dimension: 'interest',
+    text: '你最享受解决哪类技术问题？',
+    options: [
+      { label: 'A', text: '机械结构设计与优化' },
+      { label: 'B', text: '电路系统与硬件调试' },
+      { label: 'C', text: '算法逻辑与控制策略' },
+      { label: 'D', text: '系统集成与整体方案' },
+    ],
+  },
+  {
+    id: 'interest_04',
+    dimension: 'interest',
+    text: '你理想的工作节奏是怎样的？',
+    options: [
+      { label: 'A', text: '长期深耕一个项目，做深做透' },
+      { label: 'B', text: '多个短期项目并行，快速切换' },
+      { label: 'C', text: '按固定流程稳步推进' },
+      { label: 'D', text: '灵活应对，随时调整方向' },
+    ],
+  },
+  {
+    id: 'interest_05',
+    dimension: 'interest',
+    text: '你对哪个领域的未来发展最感兴趣？',
+    options: [
+      { label: 'A', text: '人形机器人与智能装备' },
+      { label: 'B', text: '新能源汽车与自动驾驶' },
+      { label: 'C', text: '工业自动化与智能制造' },
+      { label: 'D', text: '航空航天与精密仪器' },
+    ],
+  },
+  {
+    id: 'interest_06',
+    dimension: 'interest',
+    text: '你更喜欢和什么打交道？',
+    options: [
+      { label: 'A', text: '机械结构和零部件' },
+      { label: 'B', text: '电路板和元器件' },
+      { label: 'C', text: '代码和算法' },
+      { label: 'D', text: '数据和文档' },
+    ],
+  },
+  {
+    id: 'interest_07',
+    dimension: 'interest',
+    text: '遇到一个复杂技术难题，你的第一反应是？',
+    options: [
+      { label: 'A', text: '拆解成小问题，逐个击破' },
+      { label: 'B', text: '查阅文献资料，借鉴已有方案' },
+      { label: 'C', text: '动手实验，边试边调' },
+      { label: 'D', text: '找团队讨论，集思广益' },
+    ],
+  },
+  {
+    id: 'interest_08',
+    dimension: 'interest',
+    text: '你对哪种工具/平台更感兴趣？',
+    options: [
+      { label: 'A', text: 'CAD/CAE 设计与仿真工具' },
+      { label: 'B', text: '嵌入式开发与调试平台' },
+      { label: 'C', text: '机器人操作系统(ROS)与仿真环境' },
+      { label: 'D', text: 'PLC 与工业控制系统' },
+    ],
+  },
+  {
+    id: 'interest_09',
+    dimension: 'interest',
+    text: '你更倾向于成为什么样的人？',
+    options: [
+      { label: 'A', text: '某个细分领域的顶尖专家' },
+      { label: 'B', text: '能横跨多个领域的通才' },
+      { label: 'C', text: '带领团队完成目标的管理者' },
+      { label: 'D', text: '有自己产品的创业者' },
+    ],
+  },
+  {
+    id: 'interest_10',
+    dimension: 'interest',
+    text: '你对哪类工作成果最有成就感？',
+    options: [
+      { label: 'A', text: '设计出漂亮的机械结构图纸' },
+      { label: 'B', text: '调试出一块稳定运行的电路板' },
+      { label: 'C', text: '写出优雅高效的代码让机器动起来' },
+      { label: 'D', text: '把各个子系统成功集成到一起' },
+    ],
+  },
+  {
+    id: 'interest_11',
+    dimension: 'interest',
+    text: '你对新技术的学习态度是？',
+    options: [
+      { label: 'A', text: '非常积极，自驱学习新技术' },
+      { label: 'B', text: '工作需要时再学，目的导向' },
+      { label: 'C', text: '更愿意把已有技术做深做精' },
+      { label: 'D', text: '关注趋势但不会深入每个细节' },
+    ],
+  },
+  {
+    id: 'interest_12',
+    dimension: 'interest',
+    text: '你更喜欢的工作环境是？',
+    options: [
+      { label: 'A', text: '安静的实验室/研发中心' },
+      { label: 'B', text: '热闹的工厂车间' },
+      { label: 'C', text: '开放式办公区，便于协作' },
+      { label: 'D', text: '无所谓，做的事情更重要' },
+    ],
+  },
+  {
+    id: 'interest_13',
+    dimension: 'interest',
+    text: '以下哪项活动最让你感到充实？',
+    options: [
+      { label: 'A', text: '画图/建模/仿真分析' },
+      { label: 'B', text: '焊接/接线/硬件调试' },
+      { label: 'C', text: '编程/算法优化/数据可视化' },
+      { label: 'D', text: '制定方案/写文档/做汇报' },
+    ],
+  },
+  {
+    id: 'interest_14',
+    dimension: 'interest',
+    text: '你对出差/现场工作的态度是？',
+    options: [
+      { label: 'A', text: '喜欢，可以接触实际现场' },
+      { label: 'B', text: '可以接受，但不要太多' },
+      { label: 'C', text: '尽量避免，更愿意驻场办公' },
+      { label: 'D', text: '无所谓，看工作需要' },
+    ],
+  },
+  {
+    id: 'interest_15',
+    dimension: 'interest',
+    text: '你希望你的工作对社会的贡献方式是？',
+    options: [
+      { label: 'A', text: '做出看得见摸得着的产品' },
+      { label: 'B', text: '推动技术进步和理论突破' },
+      { label: 'C', text: '提升生产效率和工业水平' },
+      { label: 'D', text: '改善人们的生活体验' },
+    ],
+  },
+
+  // ========== 工作价值观 (10题) ==========
+  {
+    id: 'value_01',
+    dimension: 'value',
+    text: '选择工作时，哪个因素对你最重要？',
+    options: [
+      { label: 'A', text: '有竞争力的薪资待遇' },
+      { label: 'B', text: '工作稳定性与保障' },
+      { label: 'C', text: '个人成长与技术积累' },
+      { label: 'D', text: '良好的团队氛围与文化' },
+    ],
+  },
+  {
+    id: 'value_02',
+    dimension: 'value',
+    text: '你对工作地点的偏好？',
+    options: [
+      { label: 'A', text: '一线城市（北上广深）' },
+      { label: 'B', text: '新一线/二线城市' },
+      { label: 'C', text: '制造业集中的工业城市' },
+      { label: 'D', text: '没有偏好，哪里有机会去哪里' },
+    ],
+  },
+  {
+    id: 'value_03',
+    dimension: 'value',
+    text: '你对加班的态度是？',
+    options: [
+      { label: 'A', text: '完全接受，项目需要时可以全力以赴' },
+      { label: 'B', text: '适度可以，但希望有补偿' },
+      { label: 'C', text: '希望工作生活平衡，尽量不加班' },
+      { label: 'D', text: '看工作内容和团队文化而定' },
+    ],
+  },
+  {
+    id: 'value_04',
+    dimension: 'value',
+    text: '你更看重公司的哪个方面？',
+    options: [
+      { label: 'A', text: '行业头部企业，平台大' },
+      { label: 'B', text: '高速增长的创业公司，机会多' },
+      { label: 'C', text: '国企/研究所，稳定有保障' },
+      { label: 'D', text: '外企，技术和管理规范' },
+    ],
+  },
+  {
+    id: 'value_05',
+    dimension: 'value',
+    text: '你期望的职业发展路径是？',
+    options: [
+      { label: 'A', text: '技术路线：初级→高级→专家→总工' },
+      { label: 'B', text: '管理路线：工程师→主管→经理→总监' },
+      { label: 'C', text: '项目路线：跟着项目成长，做出标杆产品' },
+      { label: 'D', text: '综合路线：技术+管理的复合发展' },
+    ],
+  },
+  {
+    id: 'value_06',
+    dimension: 'value',
+    text: '你对继续深造（读博/进修）的态度？',
+    options: [
+      { label: 'A', text: '已经/计划读博，愿意从事研究工作' },
+      { label: 'B', text: '暂时不打算，更想积累工业界经验' },
+      { label: 'C', text: '工作中根据需要再考虑进修' },
+      { label: 'D', text: '不确定，看发展情况' },
+    ],
+  },
+  {
+    id: 'value_07',
+    dimension: 'value',
+    text: '你对薪资的期待（月薪，税前）？',
+    options: [
+      { label: 'A', text: '10k-15k，先积累经验' },
+      { label: 'B', text: '15k-25k，行业平均水平' },
+      { label: 'C', text: '25k-35k，有竞争力的薪资' },
+      { label: 'D', text: '35k+，追求更高回报' },
+    ],
+  },
+  {
+    id: 'value_08',
+    dimension: 'value',
+    text: '你认为工作中最重要的是？',
+    options: [
+      { label: 'A', text: '做有挑战性的技术工作' },
+      { label: 'B', text: '有明确的晋升通道' },
+      { label: 'C', text: '获得同事和上级的认可' },
+      { label: 'D', text: '工作本身有意义和价值' },
+    ],
+  },
+  {
+    id: 'value_09',
+    dimension: 'value',
+    text: '你对频繁换工作/换行业的看法？',
+    options: [
+      { label: 'A', text: '可以接受，机会导向' },
+      { label: 'B', text: '愿意在同一行业深耕，但可换公司' },
+      { label: 'C', text: '最好在一家公司长期发展' },
+      { label: 'D', text: '不确定，看情况' },
+    ],
+  },
+  {
+    id: 'value_10',
+    dimension: 'value',
+    text: '你理想的工作和生活的比例？',
+    options: [
+      { label: 'A', text: '工作就是生活，热爱所以投入' },
+      { label: 'B', text: '工作日全力以赴，周末完全放松' },
+      { label: 'C', text: '朝九晚五，有规律的生活节奏' },
+      { label: 'D', text: '弹性制，自己掌控时间' },
+    ],
+  },
+
+  // ========== 专业背景 (15题) ==========
+  {
+    id: 'background_01',
+    dimension: 'background',
+    text: '你的专业方向是？',
+    options: [
+      { label: 'A', text: '机械工程（机械设计/制造/机电）' },
+      { label: 'B', text: '自动化/控制工程' },
+      { label: 'C', text: '机器人工程' },
+      { label: 'D', text: '电气工程/电子信息' },
+      { label: 'E', text: '其他工科专业' },
+    ],
+  },
+  {
+    id: 'background_02',
+    dimension: 'background',
+    text: '你的最高学历是？',
+    options: [
+      { label: 'A', text: '硕士研究生（在读）' },
+      { label: 'B', text: '硕士研究生（已毕业）' },
+      { label: 'C', text: '博士研究生（在读）' },
+      { label: 'D', text: '博士研究生（已毕业）' },
+    ],
+  },
+  {
+    id: 'background_03',
+    dimension: 'background',
+    text: '你熟悉的 CAD 软件有哪些？（选最熟悉的一个）',
+    options: [
+      { label: 'A', text: 'SolidWorks' },
+      { label: 'B', text: 'CATIA' },
+      { label: 'C', text: 'AutoCAD' },
+      { label: 'D', text: 'NX (UG)' },
+      { label: 'E', text: '不太熟悉 CAD 软件' },
+    ],
+  },
+  {
+    id: 'background_04',
+    dimension: 'background',
+    text: '你在仿真分析方面的经验？',
+    options: [
+      { label: 'A', text: '熟练使用 ANSYS/Abaqus 等有限元分析工具' },
+      { label: 'B', text: '有一定基础，能完成简单分析' },
+      { label: 'C', text: '了解理论但缺乏实际操作' },
+      { label: 'D', text: '不熟悉仿真分析' },
+    ],
+  },
+  {
+    id: 'background_05',
+    dimension: 'background',
+    text: '你的编程能力如何？',
+    options: [
+      { label: 'A', text: '熟练使用 Python，有项目经验' },
+      { label: 'B', text: '熟练使用 C++，有嵌入式/实时系统经验' },
+      { label: 'C', text: 'MATLAB 为主，用于算法验证和仿真' },
+      { label: 'D', text: '编程基础较弱，更偏硬件/机械' },
+    ],
+  },
+  {
+    id: 'background_06',
+    dimension: 'background',
+    text: '你在机器人/ROS 方面的经验？',
+    options: [
+      { label: 'A', text: '熟练使用 ROS/ROS2，有完整项目经验' },
+      { label: 'B', text: '了解 ROS 基本概念，做过简单实验' },
+      { label: 'C', text: '了解但未实际操作' },
+      { label: 'D', text: '不熟悉机器人开发' },
+    ],
+  },
+  {
+    id: 'background_07',
+    dimension: 'background',
+    text: '你在嵌入式系统方面的经验？',
+    options: [
+      { label: 'A', text: '熟练使用 STM32/ARM，有完整产品经验' },
+      { label: 'B', text: '做过单片机课程设计/比赛' },
+      { label: 'C', text: '了解嵌入式但未实践' },
+      { label: 'D', text: '不熟悉嵌入式开发' },
+    ],
+  },
+  {
+    id: 'background_08',
+    dimension: 'background',
+    text: '你在 PLC 和工业控制方面的经验？',
+    options: [
+      { label: 'A', text: '熟练使用 PLC（西门子/三菱等），有实际项目' },
+      { label: 'B', text: '了解梯形图和基本编程' },
+      { label: 'C', text: '了解但未实操' },
+      { label: 'D', text: '不熟悉工业控制' },
+    ],
+  },
+  {
+    id: 'background_09',
+    dimension: 'background',
+    text: '你在电路/PCB 设计方面的经验？',
+    options: [
+      { label: 'A', text: '熟练使用 Altium Designer/Cadence，有设计经验' },
+      { label: 'B', text: '能看懂原理图，做过简单电路设计' },
+      { label: 'C', text: '了解基础电路知识' },
+      { label: 'D', text: '不熟悉电路设计' },
+    ],
+  },
+  {
+    id: 'background_10',
+    dimension: 'background',
+    text: '你的研究方向/论文课题偏向？',
+    options: [
+      { label: 'A', text: '机械结构/机构学/摩擦学' },
+      { label: 'B', text: '控制理论/运动规划/路径优化' },
+      { label: 'C', text: '机器人感知/视觉/抓取' },
+      { label: 'D', text: '电机驱动/电力电子/能源管理' },
+      { label: 'E', text: '其他方向' },
+    ],
+  },
+  {
+    id: 'background_11',
+    dimension: 'background',
+    text: '你使用 MATLAB/Simulink 的经验？',
+    options: [
+      { label: 'A', text: '熟练使用，用于控制系统设计和仿真' },
+      { label: 'B', text: '课程中使用过，有一定基础' },
+      { label: 'C', text: '基本了解' },
+      { label: 'D', text: '未使用过' },
+    ],
+  },
+  {
+    id: 'background_12',
+    dimension: 'background',
+    text: '你的英语水平？',
+    options: [
+      { label: 'A', text: 'CET-6 通过，能流畅阅读技术文档' },
+      { label: 'B', text: 'CET-4 通过，能阅读技术文档' },
+      { label: 'C', text: '有英文论文发表经验（一作）' },
+      { label: 'D', text: '英语基础一般' },
+    ],
+  },
+  {
+    id: 'background_13',
+    dimension: 'background',
+    text: '你是否有实习/项目经验？',
+    options: [
+      { label: 'A', text: '有 1 年以上企业实习经验' },
+      { label: 'B', text: '有短期实习或校企合作项目经验' },
+      { label: 'C', text: '主要是实验室/课题组项目' },
+      { label: 'D', text: '暂无实习经验' },
+    ],
+  },
+  {
+    id: 'background_14',
+    dimension: 'background',
+    text: '你在电机/伺服驱动方面的经验？',
+    options: [
+      { label: 'A', text: '有电机控制/FOC 算法实际经验' },
+      { label: 'B', text: '课程中学过电机学和电力拖动' },
+      { label: 'C', text: '了解基本原理' },
+      { label: 'D', text: '不熟悉电机控制' },
+    ],
+  },
+  {
+    id: 'background_15',
+    dimension: 'background',
+    text: '你使用版本管理/协作工具的情况？',
+    options: [
+      { label: 'A', text: '熟练使用 Git，有团队协作经验' },
+      { label: 'B', text: '基本会用 Git 管理个人项目' },
+      { label: 'C', text: '了解但不太使用' },
+      { label: 'D', text: '不熟悉版本管理' },
+    ],
+  },
+];

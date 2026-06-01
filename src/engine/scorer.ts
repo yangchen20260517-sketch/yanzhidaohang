@@ -1,4 +1,4 @@
-import type { Answer, JobResult, ScoringRule, Job } from '../data/types';
+import type { Answer, JobResult } from '../data/types';
 import { scoringRules } from '../data/scoring';
 import { jobs } from '../data/jobs';
 import { questions } from '../data/questions';
